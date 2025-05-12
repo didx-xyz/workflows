@@ -17,7 +17,20 @@ inputs:
     required: true
   tailscale-authkey:
     description: The Tailscale auth key
-    required: true
+    required: false
+    default: ''
+  tailscale-oauth-client-id:
+    description: The Tailscale OAuth client ID
+    required: false
+    default: ''
+  tailscale-oauth-secret:
+    description: The Tailscale OAuth client secret
+    required: false
+    default: ''
+  tailscale-tags:
+    description: The Tailscale tags to use
+    required: false
+    default: ''
 
 runs:
   using: composite
@@ -28,6 +41,9 @@ runs:
       uses: tailscale/github-action@5d536117a7378beffcd6d8523ce73c50fa98684d # v3.2.1
       with:
         authkey: ${{ inputs.tailscale-authkey }}
+        oauth-client-id: ${{ inputs.tailscale-oauth-client-id }}
+        oauth-secret: ${{ inputs.tailscale-oauth-secret }}
+        tags: ${{ inputs.tailscale-tags }}
         version: latest
 
     - name: Configure AWS credentials
