@@ -21,17 +21,7 @@ across our projects.
 
 Below is a list of the reusable workflows available in this repository:
 
-### CI Workflows
-
-- **build-and-test**: Standard build and test workflow for various languages and frameworks
-- **code-quality**: Static code analysis and linting workflows
-- **security-scan**: Security vulnerability scanning for code and dependencies
-
-### CD Workflows
-
-- **docker-build-push**: Build and push Docker images to container registries
-- **deployment**: Deployment workflows for various environments (dev, staging, production)
-- **release**: Create and publish releases with automatic versioning
+- **connect-eks**: Connect to Tailscale VPN, assume AWS role, and update KubeConfig to connect to and EKS cluster
 
 ## How to Use
 
