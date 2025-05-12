@@ -8,7 +8,7 @@ updates:
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: github-actions
     directories:
-      # - /
+      - /
       - /connect-eks
     schedule:
       interval: weekly
