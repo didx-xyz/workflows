@@ -14,3 +14,5 @@ updates:
       interval: weekly
       day: saturday
       time: "07:00"
+    reviewers:
+      - rblaine95
