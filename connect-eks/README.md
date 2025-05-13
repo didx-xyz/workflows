@@ -1,6 +1,6 @@
 # Connect EKS
 
-[![License](https://img.shields.io/github/license/didx-xyz/workflows.svg)](https://github.com/didx-xyz/workflows/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/didx-xyz/workflows.svg)](https://github.com/didx-xyz/workflows/blob/master/LICENSE)
 
 A GitHub Action that simplifies connecting to an EKS cluster by setting up a
 Tailscale VPN connection, assuming an AWS IAM role, and configuring kubectl
