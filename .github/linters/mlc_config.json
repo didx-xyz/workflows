@@ -1,0 +1,21 @@
+{
+    "aliveStatusCodes": [
+        0,
+        200,
+        206,
+        403,
+        501,
+        999
+    ],
+    "replacementPatterns": [
+        {
+            "pattern": "\" %}",
+            "replacement": ""
+        },
+        {
+            "pattern": "&quot; %}",
+            "replacement": ""
+        }
+    ],
+    "retryOn429": true
+}

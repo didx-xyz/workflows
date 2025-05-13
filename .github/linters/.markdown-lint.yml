@@ -1,0 +1,13 @@
+# Line length <https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md013>
+MD013:
+  line_length: 120
+  code_block_line_length: 240
+
+# Lists should be surrounded by blank lines <https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md032>
+MD032: true
+
+# Inline HTML <https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md033>
+MD033: false
+
+# Required heading structure <https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md043>
+MD043: false

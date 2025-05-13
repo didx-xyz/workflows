@@ -78,7 +78,8 @@ We welcome contributions to improve these workflows! Please follow these steps:
 
 ## Related Projects
 
-- [DIDx ACA-Py Cloud](https://github.com/didx-xyz/acapy-cloud): Cloud based deployment for Self-Sovereign Identity (SSI) applications
+- [DIDx ACA-Py Cloud](https://github.com/didx-xyz/acapy-cloud): Cloud based deployment for Self-Sovereign Identity (SSI)
+applications
 
 ## About DIDx
 
