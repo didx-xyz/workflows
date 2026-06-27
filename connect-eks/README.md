@@ -23,16 +23,16 @@ This is particularly useful for CI/CD workflows that need to interact with EKS c
 
 ## Inputs
 
-| Input | Description | Required | Default |
-| ----- | ----------- | -------- | ------- |
-| `aws-region` | The AWS region where the EKS cluster is located | Yes | N/A |
-| `aws-role-arn` | The ARN of the AWS role to assume | Yes | N/A |
-| `aws-role-session-name` | The name of the AWS role session | Yes | N/A |
-| `cluster-name` | The name of the EKS cluster | Yes | N/A |
-| `tailscale-authkey` | The Tailscale auth key | No | `''` |
-| `tailscale-oauth-client-id` | The Tailscale OAuth client ID | No | `''` |
-| `tailscale-oauth-secret` | The Tailscale OAuth client secret | No | `''` |
-| `tailscale-tags` | The Tailscale tags to use | No | `''` |
+| Input                       | Description                                     | Required | Default |
+| --------------------------- | ----------------------------------------------- | -------- | ------- |
+| `aws-region`                | The AWS region where the EKS cluster is located | Yes      | N/A     |
+| `aws-role-arn`              | The ARN of the AWS role to assume               | Yes      | N/A     |
+| `aws-role-session-name`     | The name of the AWS role session                | Yes      | N/A     |
+| `cluster-name`              | The name of the EKS cluster                     | Yes      | N/A     |
+| `tailscale-authkey`         | The Tailscale auth key                          | No       | `''`    |
+| `tailscale-oauth-client-id` | The Tailscale OAuth client ID                   | No       | `''`    |
+| `tailscale-oauth-secret`    | The Tailscale OAuth client secret               | No       | `''`    |
+| `tailscale-tags`            | The Tailscale tags to use                       | No       | `''`    |
 
 **Note**: You must provide either a `tailscale-authkey` OR both
 `tailscale-oauth-client-id` and `tailscale-oauth-secret` for Tailscale
@@ -86,13 +86,13 @@ jobs:
 This action performs the following steps:
 
 1. **Connect to Tailscale**: Establishes a VPN connection using Tailscale to securely access private networks where your
-EKS cluster may be located.
+   EKS cluster may be located.
 
 2. **Configure AWS Credentials**: Uses the AWS Actions credentials provider to assume the specified IAM role, which
-should have permissions to interact with the EKS cluster.
+   should have permissions to interact with the EKS cluster.
 
 3. **Update Kubeconfig**: Runs `aws eks update-kubeconfig` to configure kubectl with the necessary credentials and
-endpoint information for your EKS cluster.
+   endpoint information for your EKS cluster.
 
 After these steps are completed, subsequent steps in your workflow can use `kubectl` to interact with your EKS cluster.
 

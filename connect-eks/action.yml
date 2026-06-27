@@ -18,19 +18,19 @@ inputs:
   tailscale-authkey:
     description: The Tailscale auth key
     required: false
-    default: ''
+    default: ""
   tailscale-oauth-client-id:
     description: The Tailscale OAuth client ID
     required: false
-    default: ''
+    default: ""
   tailscale-oauth-secret:
     description: The Tailscale OAuth client secret
     required: false
-    default: ''
+    default: ""
   tailscale-tags:
     description: The Tailscale tags to use
     required: false
-    default: ''
+    default: ""
 
 runs:
   using: composite

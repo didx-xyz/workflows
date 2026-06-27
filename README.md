@@ -35,9 +35,9 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   test:
@@ -79,7 +79,7 @@ We welcome contributions to improve these workflows! Please follow these steps:
 ## Related Projects
 
 - [DIDx ACA-Py Cloud](https://github.com/didx-xyz/acapy-cloud): Cloud based deployment for Self-Sovereign Identity (SSI)
-applications
+  applications
 
 ## About DIDx
 
