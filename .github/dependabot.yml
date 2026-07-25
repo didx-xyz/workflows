@@ -10,7 +10,13 @@ updates:
     directories:
       - /
       - /connect-eks
+    groups:
+      github-actions:
+        patterns:
+          - "*"
     schedule:
       interval: weekly
       day: saturday
       time: "07:00"
+    cooldown:
+      default-days: 1
